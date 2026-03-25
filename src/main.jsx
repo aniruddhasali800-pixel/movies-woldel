@@ -24,6 +24,9 @@ if (!PUBLISHABLE_KEY) {
     }}>
       <h1 style={{ color: '#f43f5e' }}>Missing Configuration</h1>
       <p>Neither <code>VITE_CLERK_PUBLISHABLE_KEY</code> nor <code>NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY</code> is set.</p>
+      <p style={{ fontSize: '0.8rem', opacity: 0.7 }}>
+        Detected Keys: {Object.keys(import.meta.env).filter(k => k.startsWith('VITE_') || k.startsWith('NEXT_PUBLIC_')).join(', ') || 'None'}
+      </p>
       <p>Please check your <strong>Vercel Environment Variables</strong>.</p>
     </div>
   )
