@@ -102,8 +102,16 @@ const Hero = () => {
           transform: translateY(-2px);
         }
         @media (max-width: 768px) {
-          h1 { font-size: 2.5rem; }
-          .hero-actions { flex-direction: column; align-items: stretch; }
+          .hero-container { padding: 4rem 0; }
+          h1 { font-size: 2.2rem; margin-bottom: 1rem; }
+          p { font-size: 1.1rem; margin-bottom: 2rem; }
+          .hero-actions { 
+            flex-direction: column; 
+            align-items: stretch; 
+            gap: 1rem; 
+            padding: 0 1rem;
+          }
+          .badge { margin-bottom: 1.5rem; }
         }
       `}</style>
     </div>

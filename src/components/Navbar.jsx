@@ -1,7 +1,6 @@
 import React from 'react';
 import { BookOpen, Search, Home, GraduationCap } from 'lucide-react';
 import { motion } from 'framer-motion'; // eslint-disable-line no-unused-vars
-import { UserButton } from '@clerk/clerk-react';
 
 const Navbar = ({ onSearch }) => {
   return (
@@ -30,7 +29,6 @@ const Navbar = ({ onSearch }) => {
               onChange={(e) => onSearch(e.target.value)}
             />
           </div>
-          <UserButton afterSignOutUrl="/" />
         </div>
       </div>
       <style>{`
@@ -93,21 +91,32 @@ const Navbar = ({ onSearch }) => {
         @media (max-width: 768px) {
           .nav-content {
             flex-direction: column;
-            gap: 1rem;
+            gap: 1.5rem;
             align-items: center;
+            padding: 1rem 0;
           }
           .nav-links {
             width: 100%;
             justify-content: center;
-            gap: 1rem;
+            gap: 1.5rem;
+            order: 3;
           }
           .search-bar {
             width: 100%;
             max-width: none;
+            order: 2;
           }
           .right-nav {
             width: 100%;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 1.5rem;
+          }
+          .logo {
+            font-size: 1.25rem;
+            order: 1;
+          }
+          .nav-link {
+            font-size: 0.9rem;
           }
         }
         .search-bar input {

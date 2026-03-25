@@ -80,6 +80,11 @@ const MathPage = () => {
           grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
           gap: 2rem;
         }
+        @media (max-width: 768px) {
+          .section-header h2 { font-size: 2rem; }
+          .grid { gap: 1.5rem; }
+          .resources-section { margin-top: 2rem; }
+        }
       `}</style>
     </div>
   );
