@@ -1,13 +1,10 @@
 import React from 'react';
 import MathPage from './pages/MathPage';
 import './index.css';
-import { SignedIn, SignedOut, SignIn } from '@clerk/clerk-react';
 
 function App() {
   return (
     <div className="App">
-      <SignedIn>
-        <MathPage />
       </SignedIn>
       <SignedOut>
         <div className="auth-container">

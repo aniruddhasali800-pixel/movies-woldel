@@ -2,40 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { ClerkProvider } from '@clerk/clerk-react'
 
-// Import your publishable key (support both Vite and Next.js prefixes for flexibility)
-const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY || import.meta.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
-
-// Check for publishable key and provide a fallback if missing
-if (!PUBLISHABLE_KEY) {
-  ReactDOM.createRoot(document.getElementById('root')).render(
-    <div style={{ 
-      padding: '2rem', 
-      textAlign: 'center', 
-      color: 'white', 
-      fontFamily: 'sans-serif',
-      background: '#0f172a',
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }}>
-      <h1 style={{ color: '#f43f5e' }}>Missing Configuration</h1>
-      <p>Neither <code>VITE_CLERK_PUBLISHABLE_KEY</code> nor <code>NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY</code> is set.</p>
-      <p style={{ fontSize: '0.8rem', opacity: 0.7 }}>
-        Detected Keys: {Object.keys(import.meta.env).filter(k => k.startsWith('VITE_') || k.startsWith('NEXT_PUBLIC_')).join(', ') || 'None'}
-      </p>
-      <p>Please check your <strong>Vercel Environment Variables</strong>.</p>
-    </div>
-  )
-} else {
-  ReactDOM.createRoot(document.getElementById('root')).render(
-    <React.StrictMode>
-      <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
-        <App />
-      </ClerkProvider>
-    </React.StrictMode>,
-  )
-}
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
