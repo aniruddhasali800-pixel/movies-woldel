@@ -4,8 +4,8 @@ import App from './App.jsx'
 import './index.css'
 import { ClerkProvider } from '@clerk/clerk-react'
 
-// Import your publishable key
-const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
+// Import your publishable key (support both Vite and Next.js prefixes for flexibility)
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY || import.meta.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
 
 // Check for publishable key and provide a fallback if missing
 if (!PUBLISHABLE_KEY) {
