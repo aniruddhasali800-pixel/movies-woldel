@@ -23,8 +23,8 @@ if (!PUBLISHABLE_KEY) {
       alignItems: 'center'
     }}>
       <h1 style={{ color: '#f43f5e' }}>Missing Configuration</h1>
-      <p>The <code>VITE_CLERK_PUBLISHABLE_KEY</code> is not set.</p>
-      <p>Please add it to your <strong>.env.local</strong> or <strong>Vercel Environment Variables</strong>.</p>
+      <p>Neither <code>VITE_CLERK_PUBLISHABLE_KEY</code> nor <code>NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY</code> is set.</p>
+      <p>Please check your <strong>Vercel Environment Variables</strong>.</p>
     </div>
   )
 } else {
