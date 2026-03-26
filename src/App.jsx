@@ -1,11 +1,11 @@
 import React from 'react';
-import MathPage from './pages/MathPage';
+import ResourcePage from './pages/ResourcePage';
 import './index.css';
 
 function App() {
   return (
     <div className="app">
-      <MathPage />
+      <ResourcePage />
     </div>
   );
 }

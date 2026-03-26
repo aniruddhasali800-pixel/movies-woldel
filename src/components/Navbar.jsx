@@ -17,7 +17,7 @@ const Navbar = ({ onSearch }) => {
 
         <div className="nav-links">
           <a href="/" className="nav-link"><Home size={18} /> Home</a>
-          <a href="/math" className="nav-link active"><BookOpen size={18} /> Math Resources</a>
+          <a href="#" className="nav-link active"><BookOpen size={18} /> Study Resources</a>
         </div>
 
         <div className="right-nav">
