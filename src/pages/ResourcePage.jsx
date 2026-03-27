@@ -27,7 +27,7 @@ const ResourcePage = () => {
       <div className="container">
         <Hero />
         
-        <AdSense adSlot="1234567890" />
+        <AdSense adSlot="1234567890" adFormat="horizontal" />
         
         <div className="category-tabs glass">
           {categories.map((cat) => (
@@ -40,6 +40,8 @@ const ResourcePage = () => {
             </button>
           ))}
         </div>
+
+        <AdSense adSlot="1234567890" adFormat="fluid" style={{ display: 'block', height: '100px' }} />
 
         <motion.section 
           initial={{ opacity: 0 }}
@@ -76,6 +78,8 @@ const ResourcePage = () => {
             </div>
           )}
         </motion.section>
+
+        <AdSense adSlot="1234567890" adFormat="auto" />
       </div>
 
       <style>{`
