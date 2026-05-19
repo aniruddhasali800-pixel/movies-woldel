@@ -292,5 +292,13 @@ export const pdfs = [
     category: "Programming in C",
     type: "Notes",
     unit: "Unit 2"
+  },
+  {id:31,
+    title:"312313 Msbte Maeahi ebook notes ",
+    subjectCode:"312313",
+    filename:"312313-Msbte-Marathi-ebook-notes.pdf",
+    category:"ebook notes",
+    type:"notes",
+    unit:"Unit 3"
   }
 ];

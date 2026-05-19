@@ -1,3 +1,5 @@
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5719665546463228"
+     crossorigin="anonymous"></script>
 import React from 'react';
 import { BookOpen, Search, Home, GraduationCap } from 'lucide-react';
 import { motion } from 'framer-motion'; // eslint-disable-line no-unused-vars

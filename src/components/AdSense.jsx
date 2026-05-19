@@ -1,4 +1,6 @@
-import React, { useEffect } from 'react';
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5719665546463228"
+     crossorigin="anonymous"></script>
+     import React, { useEffect } from 'react';
 
 const AdSense = ({ adSlot, style = { display: 'block' }, adFormat = 'auto', fullWidthResponsive = 'true' }) => {
   useEffect(() => {
